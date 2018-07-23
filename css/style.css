@@ -1,0 +1,102 @@
+body {
+  font-family: 'Quicksand', sans-serif;
+}
+#navbar {
+  position: fixed;
+  top: 0px;
+  width: 270px;
+  height: 100%;
+  padding: 10px;
+  border-right: 3px double black
+}
+#main-doc {
+  margin-left: 320px;
+}
+#navbar ul {
+  list-style-type: none;
+  padding: 0px;
+}
+#navbar li {
+  height: 37px;
+  border-top: 1px solid #444;
+}
+.nav-link {
+  font-size: 1.15em;
+  letter-spacing: -1px;
+  text-decoration: none;
+  color: #444;
+}
+#navbar h1 {
+  font-size: 1.95em;
+  letter-spacing: -1px;
+  font-weight: 700;
+}
+.main-section {
+  line-height: 1.6;
+  padding: 10px;
+}
+.main-section li {
+  padding: 10px;
+}
+.main-section h2 {
+  font-size: 1.75em;
+  margin-top: 0px;
+}
+.main-section pre {
+  background-color: #efefef;
+  padding: 15px;
+}
+footer {
+  margin-left: 290px;
+  text-align: right;
+  font-weight: 200;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-right: 20px;
+  background-color: #efefef;
+}
+@media screen and (max-width: 840px) {
+  #navbar {
+    position: static;
+    height: 270px;
+    width: 98%;
+    border-right: 0px;
+    overflow: auto;
+  }
+  #navbar header {
+    position: fixed;
+    top: 0px;
+    width: 95%;
+    background-color: white;
+    z-index: 1;
+  }
+  #navigation {
+    position: relative;
+    top: 80px;
+   height: 200px;
+   overflow: auto;
+  }
+  #main-doc {
+  margin: 15px;
+  }
+  footer {
+    margin: 0px;
+  }
+}
+@media screen and (max-width: 615px) {
+  #navbar {
+    width: 95%
+  }
+}
+@media screen and (max-width: 400px) {
+  #navbar {
+    width: 93%
+  }
+  #navbar header {
+    width: 93%;
+    font-size: 1em;
+  }
+  #main-doc {
+  margin: 0px;
+  }
+}
